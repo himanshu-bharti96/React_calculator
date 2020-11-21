@@ -20,6 +20,14 @@ export default function App() {
   const clear = function () {
     setExpression("");
   };
+  const deletes = function () {
+    try {
+      let exp = expression.slice(0, expression.length - 1);
+      setExpression(exp);
+    } catch (ex) {
+      setExpression("");
+    }
+  };
   const [expression, setExpression] = React.useState("");
   return (
     <>
@@ -30,6 +38,7 @@ export default function App() {
         </button>
       ))}
       <button onClick={clear}>clear</button>
+      <button onClick={deletes}>Delete</button>
     </>
   );
 }
