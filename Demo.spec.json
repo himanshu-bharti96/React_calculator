@@ -24,7 +24,7 @@
           {
             "name": "id",
             "in": "query",
-            "description": "ID of the user",
+            "description": "ID of the user of demo api",
             "required": true,
             "schema": {
               "type": "integer",
